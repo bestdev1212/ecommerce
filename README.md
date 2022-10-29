@@ -1,6 +1,6 @@
-## Jamstack ECommerce Next
+## ECommerce site
 
-Jamstack ECommerce Next provides a way to quickly get up and running with a fully configurable ECommerce site using Next.js.
+ECommerce site built using Next.js.
 
 Out of the box, the site uses completely static data coming from a provider at `providers/inventoryProvider.js`. You can update this provider to fetch data from any real API by changing the call in the `getInventory` function.
 
@@ -10,8 +10,6 @@ Out of the box, the site uses completely static data coming from a provider at `
 
 Click [here](https://www.jamstackecommerce.dev/) to see a live preview.
 
-<details>
-  <summary>Other Jamstack ECommerce pages</summary>
 
 ### Category view
 ![Category view](example-images/2.png)
@@ -31,7 +29,7 @@ Click [here](https://www.jamstackecommerce.dev/) to see a live preview.
 1. Clone the project
 
 ```sh
-$ git clone https://github.com/jamstack-cms/jamstack-ecommerce.git
+$ git clone https://github.com/topTalent1212/ecommerce/
 ```
 
 2. Install the dependencies:
@@ -161,21 +159,3 @@ await Promise.all(
 2. Update __components/ViewInventory.js__ with methods to interact with the actual inventory API.
 
 3. Update __components/formComponents/AddInventory.js__ with methods to add item to actual inventory API.
-
-### Roadmap
-
-- Full product and category search
-- Auto dropdown navigation for large number of categories
-- Ability to add more / more configurable metadata to item details
-- Themeing + dark mode
-- Optional user account / profiles out of the box
-- Make Admin Panel responsive
-- Have an idea or a request? Submit [an issue](https://github.com/jamstack-cms/jamstack-ecommerce/issues) or [a pull request](https://github.com/jamstack-cms/jamstack-ecommerce/pulls)!
-
-### Other considerations
-
-#### Server-side processing of payments
-
-To see an example of how to process payments server-side with stripe, check out the [Lambda function in the snippets folder](https://github.com/jamstack-cms/jamstack-ecommerce/blob/next/snippets/lambda.js).
-
-Also, consider verifying totals by passing in an array of IDs into the function, calculating the total on the server, then comparing the totals to check and make sure they match.
